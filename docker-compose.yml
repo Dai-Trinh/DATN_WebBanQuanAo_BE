@@ -5,6 +5,8 @@ services:
     build:
       dockerfile: Dockerfile
     restart: always
+    volumes:
+      - D:/DATN/image:/app/data
     ports:
       - '9092:9091'
     networks:
