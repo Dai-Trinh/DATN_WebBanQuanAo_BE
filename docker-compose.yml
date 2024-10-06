@@ -9,9 +9,3 @@ services:
       - D:/DATN/image:/app/data
     ports:
       - '9092:9091'
-    networks:
-      - atino_network
-networks:
-  atino_network:
-    external: true
-
