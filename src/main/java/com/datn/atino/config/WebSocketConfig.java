@@ -23,7 +23,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-            registry.addEndpoint("/atino-notification").setAllowedOrigins(allowedOrigins).withSockJS();
+            registry.addEndpoint("/atino-notification").setAllowedOrigins("http://localhost:4300").withSockJS();
     }
 
 }
