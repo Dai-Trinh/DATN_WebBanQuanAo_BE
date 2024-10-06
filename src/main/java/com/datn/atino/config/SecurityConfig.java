@@ -41,6 +41,7 @@ public class SecurityConfig {
                     auth.requestMatchers("/login").permitAll();
                     auth.requestMatchers("/admin/**").hasAuthority("atino_admin");
                     auth.requestMatchers("/**").permitAll();
+                    auth.requestMatchers(("/atino-notification/**")).permitAll();
                     auth.anyRequest().permitAll();
                 })
                 .authenticationProvider(authenticationProvider)
